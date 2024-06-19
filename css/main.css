@@ -304,7 +304,7 @@ body.lock {
   width: 400px;
   height: 400px;
   z-index: -1;
-  background: url("../../images/main_page/Ellipse 21.png") no-repeat;
+  background: url("../images/main_page/Ellipse 21.png") no-repeat;
   background-size: contain;
   transform: rotate(60deg);
 }
@@ -424,7 +424,7 @@ body.lock {
   right: 0;
   height: 350px;
   width: 100%;
-  background: url("../../images/main_page/rectangle-hero.png") no-repeat;
+  background: url("../images/main_page/rectangle-hero.png") no-repeat;
   background-position: 90%;
   background-size: contain;
 }
