@@ -1,0 +1,54 @@
+@mixin font($weight, $size, $height) {
+    font-weight: $weight ;
+    font-size: $size ;
+    line-height: $height;
+}
+
+@mixin logo{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+     gap: 14px;
+ @include font(800, 24px, 1.21);
+     color: $text-color;
+  }
+
+
+  @mixin animation($property, $duration: 500ms) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  
+  @mixin mobile-narrow {
+    @media (max-width: 519px) {
+      @content;
+    }
+  }
+
+   @mixin mobile-only {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+    @mixin tablet {
+    @media  (min-width: 768px) and (max-width: 1190px)  {
+      @content;
+    }
+  }
+
+
+  @mixin desktop {
+    @media (min-width: 1191px) {
+      @content;
+    }
+  }
+
+  
+
+
+
+ 
+  

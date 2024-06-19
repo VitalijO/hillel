@@ -1,0 +1,83 @@
+.find-program{
+  background-color:#DEEFE4;
+}
+
+.find-program__wrapper{
+
+  display: flex;
+  justify-content: space-between;
+  padding-top:168px;
+  padding-bottom: 168px;
+  flex-wrap: wrap;  
+ @include mobile-only{
+    flex-direction: column;
+    padding: 68px 40px;
+  }
+}
+.find-program__form{
+  display: flex;
+  flex-direction: column;
+  //gap: 36px;
+  flex: 1;  
+  max-width: 710px;
+  width: 100%; 
+}
+
+.find-program__text{
+  flex: 1;
+  width: 100%;
+  max-width: 610px;
+}
+
+.find-program__title{
+  @include mobile-only{
+    @include font(400, 58px, 1.22);
+  }
+  @include font(700, 58px, 1.22);
+  margin-bottom: 20px;
+  
+}
+
+.find-program__description{
+  @include font(400, 18px, 1.22);
+  @include mobile-only{
+    margin-bottom: 40px;
+  }
+}
+
+.find-program__input{
+  border: none;
+  border-bottom: 2px solid #000; 
+  padding: 8px 0;
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+  @include font(400, 18px, 1.55);
+  &:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+}
+
+
+.find-program__form .find-program__input:last-of-type {
+  margin-bottom: 80px;
+}
+
+.find-program__button{
+width: 144px;
+height:54px;
+ 
+//margin-top: 40px;
+background-color: $text-color;
+color: #FBFBFC;
+@include font(700, 18px, 1.22);
+@include animation(background-color);
+@include mobile-only{
+  margin-left: auto;
+  margin-right: auto;
+}
+&:hover, &:focus{
+  background-color:$accent-primary  ;
+  color:#FBFBFC ;
+}
+}
