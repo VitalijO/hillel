@@ -1,0 +1,124 @@
+.learn{
+  background-color: $text-color;
+  color:#FBFBFC;
+  padding: 68px 0;
+ @include tablet{
+  padding: 168px 0;
+ }
+}
+
+.learn__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include desktop{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+}
+
+.learn__text{
+display: flex;
+flex-direction: column;
+gap: 25px;
+margin-bottom: 60px;
+@include mobile-only{
+  align-items: center;
+ 
+  padding: 0 20px ;
+}
+@include desktop{
+  margin-bottom: 0px;
+}
+}
+
+.learn__title{
+@include font(700, 58px, 1.2);
+@include mobile-only{
+  text-align: center;
+  margin-bottom: 15px;
+}  
+}
+
+.learn__description{
+max-width: 587px;
+@include font(400, 18px, 1.55);
+@include mobile-only{
+    text-align:start;
+  }
+ 
+}
+
+.learn__counters {
+  width: 100%;
+  max-width: 706px;
+  @include mobile-only{
+    margin: 0 auto;
+  }
+}
+
+.learn__counter-list{
+
+ display: flex;
+@include desktop{
+   justify-content: space-evenly;
+  }
+ @include mobile-only{
+  flex-direction: column;
+  gap: 135px;
+  align-items: center;
+
+ }
+
+ @include tablet{
+  gap: calc((100% - 534px) / 3 );
+  margin-left: auto;
+  margin-right: auto;
+ }
+  
+}
+
+.learn__counter-item{
+display: flex;
+gap: 8px;
+ flex-direction: column;
+ 
+   
+   min-width: 168px;
+   max-width:  100% ; 
+   
+  
+@include tablet{
+  width: calc((100% - 86px) / 3);
+}
+  
+}
+
+.learn__counter-item-number{
+ @include font(700, 58px, 1.2);
+ @include mobile-only{
+  text-align: center;
+ }
+
+}
+
+
+.learn__counter-item-text{
+  position: relative;
+  @include font(400, 18px, 1.55);
+  @include mobile-only{
+  text-align: center;
+   }
+  
+  &::after{
+    content: " ";
+    width: 100%;
+    height: 3px; 
+    background: url('../../images/line-lite.svg ');
+    background-size: cover;
+    position: absolute;
+    bottom: -10px; 
+    left: 0;
+  }
+}

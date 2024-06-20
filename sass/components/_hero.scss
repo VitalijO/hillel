@@ -1,0 +1,301 @@
+.hero__offer{
+  padding-top: 50px;
+  overflow: hidden;
+  @include tablet{
+    padding-top: 100px;
+    }
+  @include desktop{
+      padding-top: 221px;
+      }
+       
+ /*  overflow: visible;
+  background: 
+  url( "../../../images/main_page/Ellipse\ 20.png")  no-repeat,
+  url("../../../images/main_page/Ellipse\ 21.png")  no-repeat,
+  url("../../../images/main_page/Ellipse\ 22.png") no-repeat;
+  background-position: -100px 50px, calc(100% - 150px) calc(100% - 750px), 200px 200px;
+background-size:auto auto,  auto auto,50px 50px; */
+}
+
+.hero__container{
+  position: relative;
+ display: flex;
+
+ 
+ @include mobile-only{
+   flex-direction: column;
+ }
+&::before{
+  content: " ";
+  position: absolute;
+  top: -300px;
+  left: -200px;
+  width: 900px;
+
+  height: 900px;
+  z-index: -1;
+
+
+  background: 
+  url( "../../images/main_page/Ellipse 20.png")  no-repeat;
+    background-size: cover;
+}
+&::after{
+  content: " ";
+  position: absolute;
+  top:20px;
+  right: 0px;
+  width: 400px;
+
+ height: 400px;
+  z-index: -1;
+@include mobile-only{
+  top: 400px;
+}
+  
+  background: 
+  url( "../../images/main_page/Ellipse 21.png")  no-repeat;
+  background-size:contain;
+  transform: rotate(60deg);
+  
+}
+
+}
+
+
+.offer__holder{
+  @include mobile-narrow{
+    padding-bottom: 380px;
+  }
+
+ flex: 1;
+  padding-bottom: 218px;
+ 
+}
+
+.hero-offer___title{
+ 
+max-width: 648px;
+@include mobile-only{
+  margin-left: 35px;
+  max-width: 548px;
+}
+  @include font(700, 38px, 1.2);
+  margin-bottom: 25px;
+  @include desktop{
+    @include font(700, 58px, 1.2);
+  }
+}
+.hero-offer__text{
+  @include mobile-only{
+    margin-left: 35px
+  }
+  @include font(400, 18px, 1.55) ;
+  margin-bottom: 55px ;
+}
+.hero-offer__link{
+  color: $accent-primary;
+  
+  @include font(700, 18px, 1.22) ;
+}
+
+.hero-offer___button{
+  background-color: $body-color ;
+  color:$text-color ;
+  display:  block;
+@include mobile-only{
+  margin: 0 auto;
+  margin-bottom: 60px
+}
+@include font(700, 18px, 1.22);
+  padding: 16px 37px;
+  margin-bottom: 55px;
+  @include animation(background-color, 0.25s);
+  
+  &:hover{
+    background-color: $accent-primary;
+    color: $body-color;
+  }
+}
+
+.hero-offer__sale{
+ 
+  @include font(700, 58px, 1.2);
+  @include mobile-only{
+    margin-left: 35px;
+    @include font(700, 38px, 1.2);
+  }
+}
+
+.hero-offer__time{
+  @include mobile-only{
+    margin-left: 35px
+  }
+  @include font(700, 18px, 1.22);
+}
+
+ .hero-offer__thumb{
+  
+  position: relative;
+  flex: 1;
+  //outline: 2px solid rgb(0, 255, 64);
+ }
+
+ .hero-beckground{
+
+position: relative;
+top: 10%;
+right:0;
+height: 350px; 
+width: 100%;
+//
+@include mobile-only{
+  min-width: 320px;
+   
+  margin-left: auto;
+}
+
+
+  background: 
+  url("../images/rectangle-hero.png")  no-repeat;
+  background-position: 90%;
+  background-size:contain;
+ // outline: 2px solid blue;
+  @include tablet{
+  
+    top: 60%;
+    height: 40%;
+  }
+   @include desktop{
+    top: 35%;
+    right: 0;
+   height: 65%;
+    width: 100%; 
+   
+   }
+ }
+
+ .hero-pic{
+  position: absolute;
+  top: -30%;
+  right: 5px;
+  height: 130%;
+  width: auto;  
+  max-width: 100%;  
+  object-fit: fill;
+  //outline: 2px solid yellow;
+
+ }
+ 
+ .hero-offer-list{
+  position: relative;
+
+  @include mobile-narrow{
+    position: absolute;
+    top: -80%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+ }
+
+ .hero-offer__item{
+position: absolute;
+padding: 6px 20px;
+border: 2px solid $text-color;
+@include font(600, 18px, 1.22);
+@include mobile-narrow{
+  position: static;
+}
+ }
+ 
+ .marketer-item{
+  top: -490px;
+  right: 5px;
+
+  @include tablet{
+    top: 100px;
+    right: 350px;
+    }
+    @include desktop{
+      top: -430px;
+      right: 35px;
+    }
+  
+ }
+
+ .illustrator-item{
+  top: -580px;
+  right: 130px;
+ 
+  @include tablet{
+  top: 250px;
+  right: 350px;
+  }
+  @include desktop{
+    top: -550px;
+  right: 190px;
+ }
+}
+ 
+ .animator-item{
+  top: -170px;
+  right: 360px;
+
+  @include tablet{
+    top: -150px;
+    right: 210px;
+    }
+    @include desktop{
+ top: -440px;
+  right: 390px;
+    }
+ 
+ }
+ .programmer-item{
+  top: -415px;
+  right: 350px;
+
+  @include tablet{
+    top: -85px;
+    right: 0px;
+    }
+    @include desktop{
+top: -275px;
+  right: 530px;
+    }
+  
+ }
+ 
+.designer-item{
+  top: -300px;
+  right: 380px;
+
+  @include tablet{
+    top: -10px;
+    right: 250px;
+    }
+    @include desktop{
+ top: -140px;
+  right: 650px;
+    }
+ 
+}
+
+.photographer-item{
+  top: -520px;
+  right: 290px;
+
+  @include tablet{
+    top: -240px;
+    right: 0px;
+    }
+    @include desktop{
+      top: 20px;
+  right: 550px;
+    }
+  
+}
+  

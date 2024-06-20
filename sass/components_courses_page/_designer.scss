@@ -1,0 +1,180 @@
+.designer {
+  padding-top: 68px;
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+  @include desktop{
+     gap: 168px;
+     padding-top: 168px;
+  }
+}
+.designer-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  @include tablet{
+    
+    gap: 40px;
+  }
+  @include desktop{
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+
+
+.designer__title{
+  @include font(700, 38px, 1.2);
+  margin-bottom: 28px;
+  text-align: center;
+
+  @include desktop{
+    @include font(700, 58px, 1.2);
+    text-align: start;
+  }
+}
+
+.designer__description{
+  color: #6D6D77;
+@include font(400, 18px, 1.55);
+}
+
+
+.designer__text{
+  @include desktop{
+     max-width: 588px;
+}
+  }
+ 
+
+
+.designer__counter-list{
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+  @include mobile-only{
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+  }
+}
+
+.designer__counter-item{
+@include desktop{
+  max-width: 354px;
+}
+}
+
+.designer__counter-item-number{
+  @include font(700, 38px, 1.2);
+  text-align: center;
+  @include desktop{
+    @include font(700, 58px, 1.2);
+    text-align: start;
+  }
+}
+
+.designer__counter-item-text{
+  position: relative; 
+  margin-bottom: 25px;
+  min-width: 254px;
+@include font(400, 18px, 1.55);
+@include mobile-only{
+  text-align: center;
+}
+&::after{
+  content: " ";
+  position: absolute;
+   top: 40px;
+  left: 0;
+  width: 254px;  
+  height: 2px;
+  border: 1px solid $text-color;
+  background:$text-color; 
+  @include mobile-only{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+ 
+  
+ 
+}
+}
+
+
+.designer__counter-item-description-text{
+  @include font(400, 18px, 1.55);
+  color: #6D6D77;
+  
+}
+
+ 
+.designer__card-list{
+  display: flex;
+  gap: 19px;
+ @include mobile-only{
+  flex-direction: column;
+  text-align: center;
+ }
+}
+
+.designer__card-item{
+  @include mobile-only{
+    width: calc(100% - 10px);
+  }
+  padding: 64px 50px;
+ 
+  @include tablet{
+     width: calc((100% - 39px) / 3);
+    padding: 20px;
+  }
+  @include desktop{
+    padding: 64px 50px;
+  }
+}
+.designer__card-title{
+  position: relative;
+  margin-bottom: 50px;
+  @include font(700, 34px, 1.2);
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 368px;  
+    width: 100%;
+    height: 2px;
+    border: 1px solid $text-color;
+    background:$text-color;
+    @include desktop{
+      top: 60px;
+    left: 0;
+    transform: translateX(0%);
+    }
+  }
+}
+
+.designer__card-text{
+  @include font(400, 18px, 1.55 );
+}
+
+.portfolio__item{
+background-color:#DEEFE4;
+
+}
+.internship__item{
+  background-color: #F3F3D7;
+
+}
+.certificate__item{
+  background-color: #EFDEEE;
+
+}

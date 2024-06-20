@@ -1,0 +1,188 @@
+.prices{
+
+  padding-top: 71px;
+  padding-bottom: 71px;
+    @include desktop{
+    padding-top: 171px;
+  padding-bottom: 171px;
+  }
+}
+.prices__title{
+  @include mobile-only{
+    margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+  }
+  
+  max-width: 400px;
+  margin-bottom: 80px;
+  @include font(700, 38px, 1.22);
+@include desktop{
+  @include font(700, 58px, 1.22);
+}
+}
+
+.prices__tumb{
+  display: flex;
+  
+  @include mobile-only{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+  }
+}
+
+.prices__version-list{
+  display: flex;
+  justify-content: center;
+ // outline: 2px solid red;
+  gap: 20px;
+  @include mobile-only{
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+.prices__version-card-item{
+  display: flex;
+  @include mobile-only{
+     min-width: 320px ; 
+     width: calc(100% - 80px);  
+  }
+  flex-direction: column;
+  justify-content: space-between;
+ 
+                                                                                                                      
+  height: 100%;
+  padding:  20px 15px ;
+  background-color:  #DEEFE4;
+  @include tablet{
+    padding: 20px 14px;
+    width: calc((100% - 40px) / 3);
+  }
+ 
+  @include desktop{
+    padding: 48px 51px 64px 64px ;
+    min-height: 732px;
+    width: calc((100% - 40px) / 3);
+  }
+ 
+  @include animation(all, 0.25s);
+  &:hover{
+    background-color: #504DEE;
+    color:#FBFBFC;
+  }
+  
+}
+
+
+
+.prices__version-title{
+  @include mobile-only{
+    text-align: center;
+   
+  }
+  @include font(700, 24px, 1.2);
+  margin-bottom: 27px;
+  @include desktop{
+    @include font(700, 34px, 1.2);
+    margin-bottom: 47px;
+  }
+}
+.prices__version-advantages-item{
+  position: relative;
+  @include font(400, 18px, 1.55);
+  background-color:  #DEEFE4;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  @include animation(background-color, 0.25s);
+  
+  word-wrap: break-word; /* Переносить слова, які не вміщаються */
+ //overflow-wrap: break-word; /* Альтернативний спосіб переносу слів */
+  hyphens: auto; /* Додає дефіси !!! */
+   
+  &:last-child {
+    margin-bottom: 30px;
+  }
+
+  @include desktop{
+    margin-bottom: 22px;
+  }
+
+&::before{
+  content: " ";
+  position: absolute;
+  top: 0.5em;
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid $text-color;
+  background:$text-color;
+  @include animation(border-color, 0.25s);
+  @include animation(background-color, 0.25s);
+  
+}
+.prices__version-card-item:hover .prices__version-advantages-list &{
+  background-color: #504DEE;
+  color:#FBFBFC;
+}
+.prices__version-card-item:hover .prices__version-advantages-list &::before{
+  border: 1.5px solid #FBFBFC;
+  background:#FBFBFC;
+}
+}
+
+.prices__version-card-item, 
+.prices__version-advantages-list, 
+.prices__version-advantages-item  {
+  @include animation(border-color, 0.25s);
+  @include animation(background-color, 0.25s);
+}
+
+
+.prices__version-total-price{
+  margin-bottom: 3px;
+color: #6D6D77;
+@include font(600, 24, 1.08);
+}
+.prices__version-price{
+  margin-bottom: 18px;
+  text-align: center;
+  @include font(700, 38px, 1.22);
+  @include animation(color, 0.55s);
+  @include desktop{
+    text-align: start;
+    @include font(700, 58px, 1.22);
+  }
+}
+
+.prices__version-choose-plan{
+  display:  block;
+  padding: 16px 36px;
+  margin: auto;
+  width: 150px;
+  color: #FBFBFC;
+  background-color: $text-color;
+  border: 2px;
+  @include font(400, 24px, 1.08);
+  @include animation(background-color, 0.55s);
+
+    
+  
+   @include desktop{
+    display: inline-block;
+    @include font(700, 24px, 1.08);
+   }
+  .prices__version-card-item:hover  &{
+    background-color: #FBFBFC;    
+    color: #504DEE;
+  }
+  &:hover, &:focus{
+    background-color: #FBFBFC;    
+    color: #504DEE;
+  }
+
+
+}

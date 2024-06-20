@@ -1,0 +1,30 @@
+body {
+  
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color:$text-color;
+  background-color:$body-color;
+ &.lock{
+  overflow: hidden;
+ }
+}
+
+.container{
+margin: 0 auto;
+padding: 0 5px ;
+max-width: 767px;
+
+ 
+//outline: 2px solid red;
+
+@include tablet{
+  max-width: 768px;
+  padding: 0 10px ;
+}
+@include desktop{
+  padding: 0 15px ;
+  max-width: 1470px;
+}
+} 
