@@ -293,11 +293,7 @@ body.lock {
   width: 900px;
   height: 900px;
   z-index: -1;
-<<<<<<< HEAD
-  background: url("../../../images/main_page/Ellipse 20.png") no-repeat;
-=======
   background: url("../../images/main_page/Ellipse 20.png") no-repeat;
->>>>>>> 3fe2455c34127fb46b189814c77b7e8f65241f70
   background-size: cover;
 }
 .hero__container::after {
@@ -308,11 +304,7 @@ body.lock {
   width: 400px;
   height: 400px;
   z-index: -1;
-<<<<<<< HEAD
-  background: url("../../../images/main_page/Ellipse 21.png") no-repeat;
-=======
   background: url("../../images/main_page/Ellipse 21.png") no-repeat;
->>>>>>> 3fe2455c34127fb46b189814c77b7e8f65241f70
   background-size: contain;
   transform: rotate(60deg);
 }
@@ -432,11 +424,7 @@ body.lock {
   right: 0;
   height: 350px;
   width: 100%;
-<<<<<<< HEAD
-  background: url("../../../images/main_page/rectangle-hero.png") no-repeat;
-=======
   background: url("../images/rectangle-hero.png") no-repeat;
->>>>>>> 3fe2455c34127fb46b189814c77b7e8f65241f70
   background-position: 90%;
   background-size: contain;
 }
@@ -739,11 +727,7 @@ body.lock {
   content: " ";
   width: 100%;
   height: 3px;
-<<<<<<< HEAD
-  background: url("./../../../images/line-lite.svg");
-=======
   background: url("../../images/line-lite.svg ");
->>>>>>> 3fe2455c34127fb46b189814c77b7e8f65241f70
   background-size: cover;
   position: absolute;
   bottom: -10px;
@@ -1145,14 +1129,11 @@ body.lock {
   position: absolute;
   top: 10px;
   left: -250px;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   height: 900px;
   z-index: -1;
-<<<<<<< HEAD
-  background: url("../../../images/designer_page/Ellipse 20.png") no-repeat;
-=======
   background: url("../../images/designer_page/Ellipse 20.png") no-repeat;
->>>>>>> 3fe2455c34127fb46b189814c77b7e8f65241f70
   background-size: cover;
 }
 .courses-tumb::after {
@@ -1163,11 +1144,7 @@ body.lock {
   width: 900px;
   height: 900px;
   z-index: -1;
-<<<<<<< HEAD
-  background: url("../../../images/designer_page/Ellipse 21.png") no-repeat;
-=======
   background: url("../../images/designer_page/Ellipse 21.png") no-repeat;
->>>>>>> 3fe2455c34127fb46b189814c77b7e8f65241f70
   background-size: cover;
 }
 @media (max-width: 767px) {
@@ -1199,11 +1176,7 @@ body.lock {
   right: 0;
   height: 390px;
   width: 100%;
-<<<<<<< HEAD
-  background: url("../../../images/designer_page/Rectangle 107.png") no-repeat;
-=======
   background: url("../../images/designer_page/Rectangle 107.png") no-repeat;
->>>>>>> 3fe2455c34127fb46b189814c77b7e8f65241f70
   background-position: 100%;
   background-size: contain;
 }
@@ -1912,6 +1885,7 @@ body.lock {
 .prices__version-choose-plan {
   display: block;
   padding: 16px 36px;
+  text-align: center;
   margin: auto;
   width: 150px;
   color: #FBFBFC;

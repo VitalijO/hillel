@@ -161,6 +161,8 @@ color: #6D6D77;
 .prices__version-choose-plan{
   display:  block;
   padding: 16px 36px;
+  text-align: center;
+ 
   margin: auto;
   width: 150px;
   color: #FBFBFC;
@@ -169,9 +171,7 @@ color: #6D6D77;
   @include font(400, 24px, 1.08);
   @include animation(background-color, 0.55s);
 
-    
-  
-   @include desktop{
+@include desktop{
     display: inline-block;
     @include font(700, 24px, 1.08);
    }
