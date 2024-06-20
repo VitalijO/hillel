@@ -3,6 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: 1px solid green !important;
 }
 
 p,
@@ -292,7 +293,7 @@ body.lock {
   height: 900px;
   z-index: -1;
   background: url("../images/main_page/ellipse20.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .hero__container::after {
   content: " ";

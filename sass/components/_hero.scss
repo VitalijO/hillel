@@ -30,7 +30,7 @@
 
   background: 
   url( "../images/main_page/ellipse20.png")  no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 &::after{
   content: " ";
