@@ -27,12 +27,16 @@
   }
 }
 .discover__list{
+
   display: flex;
   gap: 25px;
   @include mobile-only{
     flex-wrap: wrap ;
-    justify-content: center;
+   justify-content: center;
   }
+@include mobile-narrow{
+  gap: 20px;
+}
 }
 .discover__see-more{
   display: flex;
