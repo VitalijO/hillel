@@ -71,6 +71,11 @@ body.lock {
   align-items: center;
   gap: 48px;
 }
+@media (max-width: 767px) {
+  .header {
+    margin-top: 0;
+  }
+}
 
 .menu__body {
   width: 100%;
@@ -819,7 +824,7 @@ body.lock {
   display: block;
   width: 100%;
   height: 2px;
-  background: url("./../../../images/line-dark.svg") no-repeat center;
+  background: url("../images/line-dark.svg") no-repeat center;
   background-size: cover;
   position: absolute;
   bottom: -10px;
@@ -1131,7 +1136,7 @@ body.lock {
   max-width: 900px;
   height: 900px;
   z-index: -1;
-  background: url("../../images/designer_page/ellipse20.png") no-repeat;
+  background: url("../images/designer_page/ellipse20.png") no-repeat;
   background-size: cover;
 }
 .courses-tumb::after {
@@ -1142,7 +1147,7 @@ body.lock {
   width: 900px;
   height: 900px;
   z-index: -1;
-  background: url("../../images/designer_page/ellipse21.png") no-repeat;
+  background: url("../images/designer_page/ellipse21.png") no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
@@ -1174,7 +1179,7 @@ body.lock {
   right: 0;
   height: 390px;
   width: 100%;
-  background: url("../../images/designer_page/rectangle107.png") no-repeat;
+  background: url("../images/designer_page/rectangle107.png") no-repeat;
   background-position: 100%;
   background-size: contain;
 }

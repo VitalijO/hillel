@@ -6,7 +6,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 48px;
-  
+  @include mobile-only{
+    margin-top: 0;
+  }
 }
 
 .menu__body{
