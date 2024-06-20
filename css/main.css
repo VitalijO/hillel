@@ -1884,7 +1884,7 @@ body.lock {
 
 .prices__version-choose-plan {
   display: block;
-  padding: 16px 36px;
+  padding: 16px 0;
   text-align: center;
   margin: auto;
   width: 150px;
